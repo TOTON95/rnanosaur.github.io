@@ -27,155 +27,160 @@ flaps_pb_holder:
     title: "Soporte del Slicer de tipo árbol para la Solapa y el portador de la power bank"
 ---
 
-Si estás aquí, entonces quieres imprimir tu nanosaur, es simple, pero tardado.
+Si estás aquí, entonces quieres imprimir tu nanosaur, es simple, pero podría tomar algo de tiempo.
 
 El **diseño Nanosaur** está bajo la licencia [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 {: .notice}
 
-I use [Cura slicer](https://ultimaker.com/software/ultimaker-cura), but all other slicer works fine. 
-Following this guideline the total time to print nanosaur will be:
+Yo uso [Cura slicer](https://ultimaker.com/software/ultimaker-cura), pero todos los demás slicers deberían funcionan bien. 
+Siguiendo esta guía, el tiempo total para imprimir un nanosaur será:
 
-| Parts | Time |
+| Partes | Tiempo |
 |-------|------|
-| [Base rear](#base-rear) | **5h** |
-| [Base front](#base-front) | **1h** and **30min** |
-| [Wheels and sprockets](#wheels-and-sprockets) | **2h** |
-| [Sliders](#sliders) | **2h** |
-| [Cover](#cover) | **1h** and **45min** |
-| [Flap and power bank holder](#flap-and-power-bank-holder) | **1h** and **45min** |
-| [Track](#print-tracks) | 2x **1h** and **30min** |
+| [Base trasera](#base-trasera) | **5h** |
+| [Base frontal](#base-frontal) | **1h** y **30min** |
+| [Ruedas y ruedas de espigas](#ruedas-y-ruedas-de-espigas) | **2h** |
+| [Deslizadores](#deslizadores) | **2h** |
+| [Cubierta](#cubierta) | **1h** and **45min** |
+| [Solapa y sujetador de power bank](#solapa-y-sujetador-de-power-bank) | **1h** y **45min** |
+| [Orugas](#orugas) | 2x **1h** y **30min** |
 | **Total** | **17h** |
 
-**:floppy_disk: Download** you can obtain all Nanosaur parts only downloading this zip file [**nanosaur_stl.zip**](https://github.com/rnanosaur/nanosaur/releases/latest/download/nanosaur_stl.zip)
+**:floppy_disk: Descarga** puedes obtener todas las partes de Nanosaur solamente con descargar este archivo zip [**nanosaur_stl.zip**](https://github.com/rnanosaur/nanosaur/releases/latest/download/nanosaur_stl.zip)
 {: .notice--success}
 
-**:bulb: Hint** On nanosaur_stl.zip you can find a folder **025in** for ball bearings with size *ID 1/4in x OD 1/2in*
+**:bulb: Pista** En el archivo nanosaur_stl.zip puedes encontrar una carpeta llamada **025in** para rodamientos de tamaño *ID 1/4in x 0D 1/2in*
 {: .notice--info}
 
 {% include video id="5cVNXbF6HzI" provider="youtube" %}
 
-# Print PLA parts
+# Imprime las partes en PLA
 
 You can split all parts following this guideline and setup the printer using this profile:
 * **Layer height**: 0.2mm
 * **Print speed**: 50mm/s
 * **Infill**: 15%
 
-## Base rear
+Puedes dividir todas las partes siguiendo esta guía y configurando tu impresora para usar este perfil:
+* **Altura de la capa**: 0.2mm
+* **Velocidad de impresión**: 50mm/s
+* **Relleno**: 15%
 
-To print this parts you need a **PLA green**. The average time will be: **5h** 
+## Base Trasera
 
-| Quantity | Part            | 3D view |
+Para imprimir las siguientes partes, vas a necesitar **PLA verde**. El tiempo promedio va a ser de: **5h**
+
+| Cantidad | Parte            | Vista 3D |
 |:--------:|-----------------|:-------:|
 | 1        | [base_rear.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/base_rear.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/base_rear.stl?height=320&width=320"></script> |
 
-I suggest orienting the STL following this picture and setup with:
-* **Supports**: Disable
+Te sugiero orientar el STL de acuerdo con la imagen y la siguiente configuración:
+* **Soportes**: Desactivar
 
 {% include figure image_path="/assets/docs/3d-print/base_rear.png" alt="base_rear.stl slicer" caption="base_rear.stl slicer" %}
 
-## Base front
+## Base frontal
 
-To print this parts you need a **PLA green**. The average time will be: **1h** and **30min**.
+Para imprimir estas partes, necesesitas **PLA verde**. El tiempo promedio será de: **1h** y **30min**.
 
-| Quantity | Part            | 3D view |
+| Cantidad | Parte            | Vista 3D |
 |:--------:|-----------------|:-------:|
 | 1        | [base_front.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/base_front.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/base_front.stl?height=320&width=320"></script> |
 
-I suggest orienting the STL following this picture and setup with:
-* **Supports**: Enable
-* **Support structure**: Tree
+Sugiero orientar el STL de acuerdo con la imagen y la siguiente configuración:
+* **Soportes**: Activar
+* **Estructuras de soporte**: Árbol
 
 {% include gallery id="base_front" caption="base_front.stl slicer" %}
 
-## Wheels and sprockets
+## Ruedas y ruedas de espigas
 
-**:bulb: Hint** On nanosaur_stl.zip you can find a folder **025in** for ball bearings with size *ID 1/4in x OD 1/2in*
+**:bulb: Pista** En el archivo nanosaur_stl.zip puedes encontrar una carpeta llamada **025in** para rodamientos de tamaño *ID 1/4in x 0D 1/2in*
 {: .notice--info}
 
-To print this parts you need a **PLA green/black**. The average time will be: **2h**. 
+Para imprimir estas partes, necesitas **PLA verde/negro**. El tiempo promedio será: **2h**. 
 
-| Quantity | Part            | 3D view |
+| Cantidad | Parte            | Vista 3D |
 |:--------:|-----------------|:-------:|
 | 2        | [sprocket.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/sprocket.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/sprocket.stl?height=320&width=320"></script> |
 | 2        | [wheel.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/wheel.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/wheel.stl?height=320&width=320"></script> |
 
-I suggest orienting the STL following this picture and setup with:
-* **Supports**: Disable
+Te sugiero orientar el STL de acuerdo con la imagen y la siguiente configuración:
+* **Soportes**: Desactivar
 
-{% include figure image_path="/assets/docs/3d-print/wheel_sprocket.png" alt="wheels and sprockets slicer" caption="wheels and sprockets slicer" %}
+{% include figure image_path="/assets/docs/3d-print/wheel_sprocket.png" alt="ruedas y ruedas de espigas slicer" caption="ruedas and ruedas de espigas slicer" %}
 
-## Sliders
+## Deslizadores
 
-To print this parts you need a **PLA green**. The average time will be: **2h**. 
+Para imprimir estas partes, necesitas **PLA verde**. El tiempo en promedio va a ser: **2h**.
 
-| Quantity | Part            | 3D view |
+| Cantidad | Parte            | Vista 3D |
 |:--------:|-----------------|:-------:|
 | 2        | [slider.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/slider.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/slider.stl?height=320&width=320"></script> |
 
-I suggest orienting the STL following this picture and setup with:
-* **Supports**: Disable
-* **Displacement**:
-  * **Left**: x=0 y=15
-  * **Right**: x=0 y=-15
+Te sugiero orientar el STL de acuerdo con la imagen y la siguiente configuración:
+* **Soportes**: Desactivar
+* **Desplazamiento**:
+  * **Izquierda**: x=0 y=15
+  * **Derecha**: x=0 y=-15
 
 {% include figure image_path="/assets/docs/3d-print/sliders.png" alt="sliders slicer" caption="sliders slicer" %}
 
-## Cover
+## Cubierta
 
-To print this parts you need a **PLA green**. The average time will be: **1h** and **45min**.
+Para imprimir estas partes, necesitas **PLA verde**. El tiempo en promedio va a ser: **1h** y **45min**.
 
-| Quantity | Part            | 3D view |
+| Cantidad | Parte            | Vista 3D |
 |:--------:|-----------------|:-------:|
 | 1        | [cover.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/cover.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/cover.stl?height=320&width=320"></script> |
 
-I suggest orienting the STL following this picture and setup with:
-* **Supports**: Disable
+Te sugiero orientar el STL de acuerdo con la imagen y la siguiente configuración:
+* **Soportes**: Desactivar
 
 {% include figure image_path="/assets/docs/3d-print/cover.png" alt="cover.stl slicer" caption="cover.stl slicer" %}
 
-## Flap and Power bank holder
+## Solapa y sujetador de Power bank
 
-To print this parts you need a **PLA green**. The average time will be: **1h** and **45min**.
+Para imprimir estas partes, necesitas **PLA verde**. El tiempo en promedio va a ser: **1h** y **45min**.
 
-| Quantity | Part            | 3D view |
+| Cantidad | Parte            | Vista 3D |
 |:--------:|-----------------|:-------:|
 | 1        | [flap_top.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/flap_top.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/flap_top.stl?height=320&width=320"></script> |
 | 1        | [flap_bottom.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/flap_bottom.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/flap_bottom.stl?height=320&width=320"></script> |
 | 1        | [pb_holder.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/pb_holder.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/pb_holder.stl?height=320&width=320"></script> |
 
-I suggest orienting the STL following this picture and setup with:
-* **Supports**: Enable
-* **Support structure**: Tree
-* **Displacement**:
+Te sugiero orientar el STL de acuerdo con la imagen y la siguiente configuración:
+* **Soportes**: Activar
+* **Estructura de soportes**: Árbol
+* **Desplazamiento**:
   * **flap_bottom.stl**: x=20 y=0
   * **flat_top.stl**: x=-20 y=0
   * **pb_holder.stl**: x=-55 y=0
 
 {% include gallery id="flaps_pb_holder" caption="flap and pb_holder slicer" %}
 
-# Print tracks
+# Orugas
 
-The nanosaur tracks are the hardest to print. You need a good 3D printer, better if your printer is direct drive. Otherwise I suggest to use a Ninjatek TPU, sufficient elastic to make these tracks.
+Las orugas de nanosaur son las partes más dificiles de imprimir. Necesitas una buena impresora, mejor aún si tu impresora es de extrusión directa. De otra forma te sugiero usar TPU Ninjatek, que es suficientemente elastico para hacer esas orugas.
 
-The average time will be: **1h** and **30min** for each track
+El tiempo promedio va a ser: **1h** y **30min** para cada oruga
 
-| Quantity | Part            | 3D view |
+| Cantidad | Parte            | Vista 3D |
 |:--------:|-----------------|:-------:|
 | 2        | [track_print.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/track_print.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/track_print.stl?height=320&width=320"></script> |
 
-I suggest orienting the STL following this picture and setup with:
-* **Layer height**: 0.2mm
-* **Print speed**: 30mm/s
-* **Infill**: 10%
-* **Supports**: Disable
-* **retraction**: Disable
+Te sugiero orientar el STL de acuerdo con la imagen y la siguiente configuración:
+* **Altura de la capa**: 0.2mm
+* **Velocidad de impresión**: 30mm/s
+* **Relleno**: 10%
+* **Soportes**: Desactivar
+* **Retracción**: Desactivar
 
 {% include figure image_path="/assets/docs/3d-print/track_print.png" alt="track_print.stl slicer" caption="track_print.stl slicer" %}
 
-# LICENSE
+# LICENCIA
 
-The **Nanosaur design** is under license [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+El **diseño de Nanosaur** esta bajo licencia [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
