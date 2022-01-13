@@ -105,10 +105,11 @@ This board is a simple adapter to connect the motor controller and the LCDs to t
   * GPIO Pin 31
   * GPIO Pin 33
 
+<!--
 There are two ways to Assembly the expansion board:
  * [Nanosaur PCBs on PCBWay](#how-make-nanosaur-pcbs-on-pcbway) to support this project 
- * [Assembly with a matrix board](/extra/assembly-matrix-board)
-
+ * [Assembly with a matrix board](/option/assembly-matrix-board)
+-->
 # How make Nanosaur PCBs on PCBWay
 
 - Register to PCBWay using [my refferer link](https://www.pcbway.com/setinvite.aspx?inviteid=472567)
@@ -122,18 +123,10 @@ The list of components that you need to have are in this table below
 
 {% include kicad_bom.html table_name=site.data.nanosaur-exp-board %}
 
-You need to build your wires:
+**:bulb: Hint** Reference [Table connectors](/bill-of-materials/#table-connectors)
+{: .notice--info}
 
-| Quantity | Part                                               | Notes     |
-|:--------:|----------------------------------------------------|-----------|
-| 1        | USB 2.0 connector Plug A, Type Male 4 pin          |           |
-| 1        | 5m Flat ribbon cable 20P Rainbow IDC wire 1.27mm   | Only 30cm |
-| 1        | **2Pin** 2.54mm female Dupont connector            |           |
-| 1        | **3Pin** 2.54mm female Dupont connector            |           |
-| 2        | **4Pin** 2.54mm female Dupont connector            |           |
-| 15       | 2.54mm Dupont jumper wire cable                    |           |
-
-All components are collected on picture below.
+If you BoM have all components, like the picture below you are ready to assembly!
 
 {% include figure image_path="/assets/docs/expansion-board/nanosaur-exp-board-components.jpg" alt="Nanosaur expansion board components" caption="Nanosaur expansion board components" %}
 

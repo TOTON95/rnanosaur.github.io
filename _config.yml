@@ -1,31 +1,42 @@
+# minimal mistakes Jekyll reference
+# https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_config.yml
+
+remote_theme: mmistakes/minimal-mistakes
 
 minimal_mistakes_skin: "aqua"
-search: true
 
 title: "nanosaur"
 subtitle: "The smallest NVIDIA Jetson dinosaur robot"
-name: "Raffaello Bonghi"
-
+name: &name "The smallest NVIDIA Jetson dinosaur robot"
+description: &description "nanosaur is a the smallest NVIDIA Jetson dinosaur robot, open-source, fully 3D printable, based on ROS2 and Isaac ROS designed and made by Raffaello Bonghi"
+url: https://nanosaur.ai
 repository: "rnanosaur/rnanosaur.github.io"
+logo: /assets/images/nanosaur-logo.png
+teaser: /assets/images/intro.jpg
 
-twitter_username: raffaello86
-github_username: rbonghi
+search: true
+search_full_content: true
+
+github: [metadata]
 
 twitter:
-  username: "raffaello86"
+  username: &twitter "raffaello86"
 
-# Build settings
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-# timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+discord:
+  id: 797461428646707211
 
-after_footer_scripts :
-  - /assets/js/cookie-consent.js
-  - /assets/js/copyCode.js
+social:
+  links: # An array of links to social media profiles
+    - "https://twitter.com/raffaello86"
+    - "https://instagram.com/robo.panther"
+
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "UA-92957365-2"
+    anonymize_ip: false # default
+  google-tag:
+    tracking_id: "GTM-WCM4XGH"
 
 author:
   name        : "Raffaello Bonghi"
@@ -57,9 +68,6 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://rnext.it"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/raffaello86"
@@ -78,8 +86,26 @@ footer:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:raffaello@rnext.it"
+    - label: "Terms"
+      icon: "fas fa-fw fa-link"
+      url: "/terms"
 
-teaser: /assets/images/intro.jpg
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - vendor
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
 collections:
   docs:
@@ -93,6 +119,17 @@ collections:
     permalink: /:collection/:path/
 
 defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      share: true
+      related: true
+      show_date: true
   # docs
   - scope:
       path: "_docs"
@@ -134,13 +171,11 @@ defaults:
       layout: single
       author_profile: true
 
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-exclude:
-  - README.md
-  - LICENSE
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+# timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
 plugins:
@@ -150,6 +185,17 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-redirect-from
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-redirect-from
 
 category_archive:
   type: liquid
@@ -158,8 +204,7 @@ tag_archive:
   type: liquid
   path: /tags/
 
-analytics:
-  provider: "google"
-  google:
-    tracking_id: "UA-92957365-2"
-    anonymize_ip: false # default
+after_footer_scripts :
+  - /assets/js/cookie-consent.js
+  - /assets/js/copyCode.js
+  - /assets/js/navtab.js

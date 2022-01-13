@@ -7,6 +7,19 @@ toc: true
 toc_label: "Table of Contents"
 toc_icon: "cog"
 toc_sticky: true
+screwdrivers:
+  - url: /assets/docs/assembly/screwdriver_small.png
+    image_path: /assets/docs/assembly/screwdriver_small.png
+    alt: "Screwdriver slotted small"
+    title: "Screwdriver slotted small"
+  - url: /assets/docs/assembly/arm_wrench.png
+    image_path: /assets/docs/assembly/arm_wrench.png
+    alt: "Hex M2 Allen Key"
+    title: "Hex M2 Allen Key"
+  - url: /assets/docs/assembly/wowstick-screwdriver.jpg
+    image_path: /assets/docs/assembly/wowstick-screwdriver.jpg
+    alt: "(optional) WOWSTICK electric screwdriver"
+    title: "(optional) WOWSTICK electric screwdriver"
 pbholder:
   - url: /assets/docs/assembly/pbholder.png
     image_path: /assets/docs/assembly/pbholder.png
@@ -132,24 +145,6 @@ wiring-complete:
     image_path: /assets/docs/assembly/body-08-assembled.jpg
     alt: "Nanosaur body assembled"
     title: "Nanosaur body assembled"
-cover:
-  - url: /assets/docs/assembly/cover-01-magnets.png
-    image_path: /assets/docs/assembly/cover-01-magnets.png
-    alt: "Cover assembly magnets"
-    title: "Cover Assembly magnets"
-  - url: /assets/docs/assembly/cover-02-display.png
-    image_path: /assets/docs/assembly/cover-02-display.png
-    alt: "Cover assembly display"
-    title: "Cover Assembly display"
-  - url: /assets/docs/assembly/cover-03-cam.png
-    image_path: /assets/docs/assembly/cover-03-cam.png
-    alt: "Cover assembly camera"
-    title: "Assembly camera"
-cover-complete:
-  - url: /assets/docs/assembly/cover-04-assembled.jpg
-    image_path: /assets/docs/assembly/cover-04-assembled.jpg
-    alt: "Nanosaur cover assembled"
-    title: "Nanosaur cover assembled"
 body-head:
   - url: /assets/docs/assembly/body-head-01.png
     image_path: /assets/docs/assembly/body-head-01.png
@@ -183,6 +178,36 @@ power-bank-complete:
     image_path: /assets/docs/assembly/nanosaur-03-usb.jpg
     alt: "Plug the USB to the power bank"
     title: "Plug the USB to the power bank"
+covers:
+  - image_path: /assets/docs/assembly/cover-fe/nanosaur-cover-fe.png
+    alt: "Fish-eye cam"
+    title: "Fish-eye cam"
+    excerpt: "cover nanosaur for Fish-eye camera."
+    url: "/optional/cover#assembly-wide-camera-cover"
+    btn_label: "assembly"
+    btn_class: "btn--success"
+covers-line2:
+  - image_path: /assets/docs/assembly/cover-cam/nanosaur-cover.png
+    alt: "PI cam v2"
+    title: "PI cam v2"
+    excerpt: "cover nanosaur for Raspberry Cam V2."
+    url: "/optional/cover#assembly"
+    btn_label: "assembly"
+    btn_class: "btn--success"
+  - image_path: /assets/docs/assembly/cover-zedmini/nanosaur-cover-zedmini.png
+    alt: "ZED mini"
+    title: "ZED mini"
+    excerpt: "cover nanosaur for ZED mini."
+    url: "/optional/cover#assembly-zed-mini-cover"
+    btn_label: "assembly"
+    btn_class: "btn--success"
+  - image_path: /assets/docs/assembly/cover-rs/nanosaur-cover-realsense.png
+    alt: "Realsense"
+    title: "Realsense"
+    excerpt: "cover nanosaur for Realsense camera."
+    url: "/optional/cover#assembly-realsense-cover"
+    btn_label: "assembly"
+    btn_class: "btn--success"
 ---
 
 If you are here, you are ready to mount nanosaur!
@@ -200,10 +225,10 @@ We can split the nanosaur assembly into four parts:
 After mounts these three parts you can complete the nanosaur assembly.
 You need only:
 
-| Tool                       | Picture                                                           |
-|----------------------------|-------------------------------------------------------------------|
-| Hex M2 arm wrench          | ![arm M2 wrench](/assets/docs/assembly/arm_wrench.png)            |
-| Screwdriver slotted small  | ![screwdriver_small](/assets/docs/assembly/screwdriver_small.png) |
+{% include gallery id="screwdrivers" caption="Set of screwdrivers" %}
+
+**:bulb: Hint** To simplify the assembly, **dry-fit** of all screws after 3D print
+{: .notice--info}
 
 # Power Bank holder
 
@@ -214,7 +239,7 @@ You need only:
 
 Stick the magnets is optional, if you want only screw the power bank holder, skip thi step.
 
-**:bulb: Hint** If you don't want to use the magnets, but the screw, follow the optional guide [Screw Assembly](/extra/screw-assembly)
+**:bulb: Hint** If you don't want to use the magnets, but the screw, follow the optional guide [Screw Assembly](/optional/screw-assembly)
 {: .notice--info}
 
 {% include gallery id="pbholder" caption="Assembly nanosaur power bank holder" %}
@@ -244,6 +269,9 @@ The two wheels and the two sprockets are simple to assemble. Pick it up the whee
 | 1        | USB cable                                                |
 | 4        | Hex M2 10mm                                              |
 
+**:bulb: Hint** To simplify the assembly, **dry-fit** of all screws after 3D print
+{: .notice--info}
+
 To assembly the flap, is relative simple, follow the pictures below, you need in the beginning soldering the [Expansion board](/expansion-board), when is done, you should follow these simple steps:
 
 1. mount the flap covers on the nanosaur expansion board
@@ -270,7 +298,10 @@ Now we are assembly the robot. We are ready to see finally Nanosaur riding on yo
 | 2        | Pololu Micro Gearbox                    |
 | 3        | magnet 4x2mm                            |
 
-**:bulb: Hint** If you don't want to use the magnets, but the screw, follow the optional guide [Screw Assembly](/extra/screw-assembly)
+**:bulb: Hint** If you don't want to use the magnets, but the screw, follow the optional guide [Screw Assembly](/optional/screw-assembly)
+{: .notice--info}
+
+**:bulb: Hint** To simplify the assembly, **dry-fit** of all screws after 3D print
 {: .notice--info}
 
 **:warning: WARNING** Check the magnets orientation before to stick it!
@@ -299,7 +330,7 @@ When is done the result will be like the picture below. Where the two cables are
 | 4        | Hex M2 6mm                            |
 | 2        | magnet 4x2mm                          |
 
-**:bulb: Hint** If you don't want to use the magnets, but the screw, follow the optional guide [Screw Assembly](/extra/screw-assembly)
+**:bulb: Hint** If you don't want to use the magnets, but the screw, follow the optional guide [Screw Assembly](/optional/screw-assembly)
 {: .notice--info}
 
 Now bring the rear base of Nanosaur and with 4 screws assembly the cover, after that stick with glue the two magnets in their slots, following the pictures below.
@@ -315,10 +346,13 @@ When you assembly the rear part, the motor will be like the picture below.
 | Quantity | Part                                       |
 |:--------:|--------------------------------------------|
 | 2        | [Wheel](#wheels-and-sprocket)              |
-| 2        | [Slider](/3d-print#sliders)
-| 2        | [track_print.stl](/3d-print#print-tracks) |
+| 2        | [Slider](/3d-print#sliders)                |
+| 2        | [track_print.stl](/3d-print#print-tracks)  |
 | 6        | M2 nuts                                    |
 | 6        | Hex M2 20mm                                |
+
+**:bulb: Hint** To simplify the assembly, **dry-fit** of all screws after 3D print
+{: .notice--info}
 
 This part is relative simple, you need to follow for each track this simple steps:
 
@@ -344,6 +378,9 @@ The result will be like the picture below
 | 1        | Adafruit motor control  |
 | 8        | Hex M2 4mm              |
 
+**:bulb: Hint** To simplify the assembly, **dry-fit** of all screws after 3D print
+{: .notice--info}
+
 This part need more attention, from this part, Nanosaur will be completed at 80%
 
 {% include gallery id="wiring" caption="assembly and wiring boards" %}
@@ -365,33 +402,14 @@ When the body is assembled looks like the picture below
 
 # Head
 
-Components to pick up
+There are many options to assembly the nanosaur head. Follow the instructions from the cover your already printed.
 
-| Quantity | Part                          |
-|:--------:|-------------------------------|
-| 1        | [cover.stl](/3d-print/#cover) |
-| 1        | PI cam v2                     |
-| 2        | oLED display - 128x64px       |
-| 12       | Hex M2 4mm                    |
-| 3        | magnet 4x2mm                  |
+{% include feature_row id="covers" type="left" %}
 
-**:bulb: Hint** If you don't want to use the magnets, but the screw, follow the optional guide [Screw Assembly](/extra/screw-assembly)
+{% include feature_row id="covers-line2" %}
+
+**:bulb: Hint** A new cover for **OAK-D lite** will coming soon!
 {: .notice--info}
-
-**:warning: WARNING** Check the magnets orientation before to stick it!
-{: .notice--warning}
-
-We are looking the end of the assembling! 
-
-1. Bring three magnets and stick on the cover folloing the picture below
-2. Screw two 128x64px oLed display
-3. Screw the PI Cam
-
-{% include gallery id="cover" caption="Assembly components head" %}
-
-When the cover will be fully assembled, looks like the picture below. Remember to check that the flat cable look the base of the robot.
-
-{% include gallery id="cover-complete" caption="Body assembled" %}
 
 # Full assembly
 
@@ -404,7 +422,7 @@ Finally we are at the last step to build nanosaur, we only need to mount the hea
 | 1        | [Body](#body)       |
 | 1        | [Head](#head)       |
 
-**:bulb: Hint** If you don't want to use the magnets, but the screw, follow the optional guide [Screw Assembly](/extra/screw-assembly)
+**:bulb: Hint** If you don't want to use the magnets, but the screw, follow the optional guide [Screw Assembly](/optional/screw-assembly)
 {: .notice--info}
 
 {% include gallery id="body-head" caption="Assembly nanosaur head" %}
@@ -427,7 +445,7 @@ Now clip the cover to body. Really simple the magnets will hold the cover withou
 | 1        | [Head](#head)                           |
 | 1        | [Power Bank holder](#power-bank-holder) |
 
-**:bulb: Hint** If you don't want to use the magnets, but the screw, follow the optional guide [Screw Assembly](/extra/screw-assembly)
+**:bulb: Hint** If you don't want to use the magnets, but the screw, follow the optional guide [Screw Assembly](/optional/screw-assembly)
 {: .notice--info}
 
 {% include gallery id="power-bank" caption="Assembly nanosaur power bank" %}

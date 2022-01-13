@@ -2,29 +2,189 @@
 title: "3D print"
 permalink: /3d-print/
 header:
-  teaser: /assets/docs/3d-print/base_rear.png
+  teaser: /assets/docs/3d-print-cura/base_rear.png
 toc: true
 toc_label: "Table of Contents"
 toc_icon: "cog"
 toc_sticky: true
-base_front:
-  - url: /assets/docs/3d-print/base_front_A.png
-    image_path: /assets/docs/3d-print/base_front_A.png
-    alt: "base_front.stl orientation"
-    title: "base_front.stl orientation"
-  - url: /assets/docs/3d-print/base_front_B.png
-    image_path: /assets/docs/3d-print/base_front_B.png
-    alt: "base_front.stl slicer support type tree"
-    title: "base_front.stl slicer support type tree"
-flaps_pb_holder:
-  - url: /assets/docs/3d-print/flap_pb_holder_A.png
-    image_path: /assets/docs/3d-print/flap_pb_holder_A.png
-    alt: "Flap and power bank holder orientation"
-    title: "Flap and power bank holder orientation"
-  - url: /assets/docs/3d-print/flap_pb_holder_B.png
-    image_path: /assets/docs/3d-print/flap_pb_holder_B.png
-    alt: "Flap and power bank holder slicer support type tree"
-    title: "Flap and power bank holder slicer support type tree"
+nav-base-rear:
+  - name: "Cura"
+    image:
+      - image_path: /assets/docs/3d-print-cura/base_rear.png
+    caption: "base_rear.stl slicer"
+    excerpt: >
+      I suggest orienting the STL following this picture and setup with:
+        * **Supports**: Disable
+  - name: "PrusaSlicer/SuperSlicer"
+    image:
+      - image_path: /assets/docs/3d-print-slicer/base-rear.png
+    caption: "base_rear.stl slicer"
+    excerpt: >
+      I suggest orienting the STL following this picture and setup with:
+        * **Supports**: Disable
+nav-base-front:
+  - name: "Cura"
+    image: 
+      - url: /assets/docs/3d-print-cura/base_front_A.png
+        image_path: /assets/docs/3d-print-cura/base_front_A.png
+        alt: "base_front.stl orientation"
+        title: "base_front.stl orientation"
+      - url: /assets/docs/3d-print-cura/base_front_B.png
+        image_path: /assets/docs/3d-print-cura/base_front_B.png
+        alt: "base_front.stl slicer support type tree"
+        title: "base_front.stl slicer support type tree"
+    caption: "base_front.stl slicer"
+    excerpt: >
+      I suggest orienting the STL following this picture and setup with:
+        * **Supports**: Enable
+        * **Support structure**: Tree
+  - name: "PrusaSlicer/SuperSlicer"
+    image: 
+      - url: /assets/docs/3d-print-slicer/base_front_A.png
+        image_path: /assets/docs/3d-print-slicer/base_front_A.png
+        alt: "base_front.stl orientation"
+        title: "base_front.stl orientation"
+      - url: /assets/docs/3d-print-slicer/base_front_B.png
+        image_path: /assets/docs/3d-print-slicer/base_front_B.png
+        alt: "base_front.stl detail supports"
+        title: "base_front.stl detail supports"
+    caption: "base_front.stl slicer"
+    excerpt: >
+      I suggest orienting the STL following this picture and setup with:
+        * **Generate support material**: Enable
+        * **Support on build plate only**: Enable
+        * **Don't support brides**: Disable
+nav-wheels-sprokets:
+  - name: "Cura"
+    image: 
+      - image_path: /assets/docs/3d-print-cura/wheel_sprocket.png
+    caption: "wheels and sprockets slicer"
+    excerpt: >
+      I suggest orienting the STL following this picture and setup with:
+        * **Use the auto arrange button**
+        * **Supports**: Disable
+  - name: "PrusaSlicer/SuperSlicer"
+    image:
+      - image_path: /assets/docs/3d-print-slicer/wheel-sproket.png
+    caption: "wheels and sprockets slicer"
+    excerpt: >
+      I suggest orienting the STL following this picture and setup with:
+        * **Use the auto arrange button**
+        * **Supports**: Disable
+nav-sliders:
+  - name: "Cura"
+    image: 
+      - image_path: /assets/docs/3d-print-cura/sliders.png
+    caption: "sliders slicer"
+    excerpt: >
+      I suggest orienting the STL following this picture and setup with:
+        * **Supports**: Disable
+        * **Displacement**:
+          * **Left**: x=0 y=15
+          * **Right**: x=0 y=-15
+  - name: "PrusaSlicer/SuperSlicer"
+    image:
+      - image_path: /assets/docs/3d-print-slicer/sliders.png
+    caption: "wheels and sprockets slicer"
+    excerpt: >
+      I suggest orienting the STL following this picture and setup with:
+        * **Use the auto arrange button**
+        * **Supports**: Disable
+nav-flaps-pb-holder:
+  - name: "Cura"
+    image: 
+      - url: /assets/docs/3d-print-cura/flap_pb_holder_A.png
+        image_path: /assets/docs/3d-print-cura/flap_pb_holder_A.png
+        alt: "Flap and power bank holder orientation"
+        title: "Flap and power bank holder orientation"
+      - url: /assets/docs/3d-print-cura/flap_pb_holder_B.png
+        image_path: /assets/docs/3d-print-cura/flap_pb_holder_B.png
+        alt: "Flap and power bank holder slicer support type tree"
+        title: "Flap and power bank holder slicer support type tree"
+    caption: "flap and pb_holder slicer"
+    excerpt: >
+      I suggest orienting the STL following this picture and setup with:
+        * **Supports**: Enable
+        * **Support structure**: Tree
+        * **Displacement**:
+          * **flap_bottom.stl**: x=20 y=0
+          * **flat_top.stl**: x=-20 y=0
+          * **pb_holder.stl**: x=-55 y=0
+  - name: "PrusaSlicer/SuperSlicer"
+    image: 
+      - url: /assets/docs/3d-print-slicer/flap_pb_holder_A.png
+        image_path: /assets/docs/3d-print-slicer/flap_pb_holder_A.png
+        alt: "Flap and power bank holder orientation"
+        title: "Flap and power bank holder orientation"
+      - url: /assets/docs/3d-print-slicer/flap_pb_holder_B.png
+        image_path: /assets/docs/3d-print-slicer/flap_pb_holder_B.png
+        alt: "Upper flap - paint remove selection"
+        title: "Upper flap - paint remove selection"
+      - url: /assets/docs/3d-print-slicer/flap_pb_holder_C.png
+        image_path: /assets/docs/3d-print-slicer/flap_pb_holder_C.png
+        alt: "Power Bank holder - paint remove selection"
+        title: "Power Bank holder - paint remove selection"
+    caption: "flap and pb_holder slicer"
+    excerpt: >
+      Follow the images and using the **Paint-on supports tool** block all supports on:
+        * Power bank holder
+        * Upper flap
+
+      I suggest orienting the STL following this picture and setup with:
+        * **Generate support material**: Enable
+        * **Support on build plate only**: Enable
+        * **Don't support brides**: Disable
+nav-tracks:
+  - name: "Cura"
+    image: 
+      - image_path: /assets/docs/3d-print-cura/track_print.png
+    caption: "track_print.stl slicer"
+    excerpt: >
+      I suggest orienting the STL following this picture and setup with:
+        * **Print speed**: 30mm/s
+        * **Infill**: 10%
+        * **Supports**: Disable
+        * **Retraction**: Disable
+  - name: "PrusaSlicer/SuperSlicer"
+    image: 
+      - image_path: /assets/docs/3d-print-slicer/track_print.png
+    caption: "track_print.stl slicer"
+    excerpt: >
+      I suggest orienting the STL following this picture and setup with:
+        * **Print speed**: 30mm/s
+        * **Infill**: 10%
+        * **Supports**: Disable
+        * **Retraction**: Disable
+covers:
+  - image_path: /assets/docs/assembly/cover-fe/coverFishEye.png
+    alt: "Fish-eye cam"
+    title: "Fish-eye cam"
+    excerpt: "cover nanosaur for Fish-eye camera."
+    url: "/optional/cover#3d-print-wide-camera-cover"
+    btn_label: "3D print"
+    btn_class: "btn--success"
+covers-line2:
+  - image_path: /assets/docs/assembly/cover-cam/cover.png
+    alt: "PI cam v2"
+    title: "PI cam v2"
+    excerpt: "cover nanosaur for Raspberry Cam V2."
+    url: "/optional/cover#3d-print"
+    btn_label: "3D print"
+    btn_class: "btn--success"
+  - image_path: /assets/docs/assembly/cover-zedmini/cover_ZEDmini.png
+    alt: "ZED mini"
+    title: "ZED mini"
+    excerpt: "cover nanosaur for ZED mini."
+    url: "/optional/cover#3d-print-zed-mini-cover"
+    btn_label: "3D print"
+    btn_class: "btn--success"
+  - image_path: /assets/docs/assembly/cover-rs/cover_RealSense.png
+    alt: "Realsense"
+    title: "Realsense"
+    excerpt: "cover nanosaur for Realsense camera."
+    url: "/optional/cover#3d-print-realsense-cover"
+    btn_label: "3D print"
+    btn_class: "btn--success"
 ---
 
 If you are here you want 3D print nanosaur, it's simple, but long.
@@ -32,19 +192,25 @@ If you are here you want 3D print nanosaur, it's simple, but long.
 The **Nanosaur design** is under license [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 {: .notice}
 
-I use [Cura slicer](https://ultimaker.com/software/ultimaker-cura), but all other slicer works fine. 
-Following this guideline the total time to print nanosaur will be:
+In this guide you will find two different guidelines for three popular slicers:
+1. [**Cura**](https://ultimaker.com/software/ultimaker-cura)
+2. [**PrusaSlicer**](https://www.prusa3d.com/page/prusaslicer_424/) or [**SuperSlicer**](https://github.com/supermerill/SuperSlicer)
 
-| Parts | Time |
-|-------|------|
-| [Base rear](#base-rear) | **5h** |
-| [Base front](#base-front) | **1h** and **30min** |
-| [Wheels and sprockets](#wheels-and-sprockets) | **2h** |
-| [Sliders](#sliders) | **2h** |
-| [Cover](#cover) | **1h** and **45min** |
-| [Flap and power bank holder](#flap-and-power-bank-holder) | **1h** and **45min** |
-| [Track](#print-tracks) | 2x **1h** and **30min** |
-| **Total** | **17h** |
+Following this guideline the average time to print nanosaur is:
+
+| Qt | Part            | Material        | Time  | Notes                                                     |
+|:--:|-----------------|-----------------|:-----:|-----------------------------------------------------------|
+| 1  | base_rear.stl   | PLA green       | 3h    | [Base rear](#base-rear)                                   |
+| 1  | base_front.stl  | PLA green       | 1:30h | [Base front](#base-front)                                 |
+| 1  | cover.stl       | PLA green       | 1:45h | [Cover](#cover)                                           |
+| 2  | slider.stl      | PLA green       | 1h    | [Sliders](#sliders)                                       |
+| 1  | pb_holder.stl   | PLA green       | 20min | A - Combined<br/>[Flap and power bank holder](#flap-and-power-bank-holder) |
+| 1  | flap_top.stl    | PLA green       | 45min | A - Combined<br/>[Flap and power bank holder](#flap-and-power-bank-holder) |
+| 1  | flap_bottom.stl | PLA green       | 45min | A - Combined<br/>[Flap and power bank holder](#flap-and-power-bank-holder) |
+| 2  | sprocket.stl    | PLA green/black | 1h    | B - Combined<br/>[Wheels and sprockets](#wheels-and-sprockets)             |
+| 2  | wheel.stl       | PLA green/black | 1h    | B - Combined<br/>[Wheels and sprockets](#wheels-and-sprockets)             |
+| 2  | track_print.stl | TPU black/grey  | 1:30h | [Track](#print-tracks)                                   |
+|    |                 | **Total**       | **15h** |                                                        |
 
 **:floppy_disk: Download** you can obtain all Nanosaur parts only downloading this zip file [**nanosaur_stl.zip**](https://github.com/rnanosaur/nanosaur/releases/latest/download/nanosaur_stl.zip)
 {: .notice--success}
@@ -67,26 +233,18 @@ To print this parts you need a **PLA green**. The average time will be: **5h**
 
 | Quantity | Part            | 3D view |
 |:--------:|-----------------|:-------:|
-| 1        | [base_rear.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/base_rear.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/base_rear.stl?height=320&width=320"></script> |
+| 1        | [base_rear.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/base_rear.stl) | {% include 3dview.html username="rnanosaur" repo="nanosaur" path_to_file="nanosaur_description/meshes/base_rear.stl" %} |
 
-I suggest orienting the STL following this picture and setup with:
-* **Supports**: Disable
-
-{% include figure image_path="/assets/docs/3d-print/base_rear.png" alt="base_rear.stl slicer" caption="base_rear.stl slicer" %}
-
+{% include navtab id="nav-base-rear" %}
 ## Base front
 
 To print this parts you need a **PLA green**. The average time will be: **1h** and **30min**.
 
 | Quantity | Part            | 3D view |
 |:--------:|-----------------|:-------:|
-| 1        | [base_front.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/base_front.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/base_front.stl?height=320&width=320"></script> |
+| 1        | [base_front.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/base_front.stl) | {% include 3dview.html username="rnanosaur" repo="nanosaur" path_to_file="nanosaur_description/meshes/base_front.stl" %} |
 
-I suggest orienting the STL following this picture and setup with:
-* **Supports**: Enable
-* **Support structure**: Tree
-
-{% include gallery id="base_front" caption="base_front.stl slicer" %}
+{% include navtab id="nav-base-front" %}
 
 ## Wheels and sprockets
 
@@ -97,13 +255,10 @@ To print this parts you need a **PLA green/black**. The average time will be: **
 
 | Quantity | Part            | 3D view |
 |:--------:|-----------------|:-------:|
-| 2        | [sprocket.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/sprocket.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/sprocket.stl?height=320&width=320"></script> |
-| 2        | [wheel.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/wheel.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/wheel.stl?height=320&width=320"></script> |
+| 2        | [sprocket.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/sprocket.stl) | {% include 3dview.html username="rnanosaur" repo="nanosaur" path_to_file="nanosaur_description/meshes/sprocket.stl" %} |
+| 2        | [wheel.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/wheel.stl) | {% include 3dview.html username="rnanosaur" repo="nanosaur" path_to_file="nanosaur_description/meshes/wheel.stl" %} |
 
-I suggest orienting the STL following this picture and setup with:
-* **Supports**: Disable
-
-{% include figure image_path="/assets/docs/3d-print/wheel_sprocket.png" alt="wheels and sprockets slicer" caption="wheels and sprockets slicer" %}
+{% include navtab id="nav-wheels-sprokets" %}
 
 ## Sliders
 
@@ -111,28 +266,9 @@ To print this parts you need a **PLA green**. The average time will be: **2h**.
 
 | Quantity | Part            | 3D view |
 |:--------:|-----------------|:-------:|
-| 2        | [slider.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/slider.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/slider.stl?height=320&width=320"></script> |
+| 2        | [slider.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/slider.stl) | {% include 3dview.html username="rnanosaur" repo="nanosaur" path_to_file="nanosaur_description/meshes/slider.stl" %} |
 
-I suggest orienting the STL following this picture and setup with:
-* **Supports**: Disable
-* **Displacement**:
-  * **Left**: x=0 y=15
-  * **Right**: x=0 y=-15
-
-{% include figure image_path="/assets/docs/3d-print/sliders.png" alt="sliders slicer" caption="sliders slicer" %}
-
-## Cover
-
-To print this parts you need a **PLA green**. The average time will be: **1h** and **45min**.
-
-| Quantity | Part            | 3D view |
-|:--------:|-----------------|:-------:|
-| 1        | [cover.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/cover.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/cover.stl?height=320&width=320"></script> |
-
-I suggest orienting the STL following this picture and setup with:
-* **Supports**: Disable
-
-{% include figure image_path="/assets/docs/3d-print/cover.png" alt="cover.stl slicer" caption="cover.stl slicer" %}
+{% include navtab id="nav-sliders" %}
 
 ## Flap and Power bank holder
 
@@ -140,19 +276,22 @@ To print this parts you need a **PLA green**. The average time will be: **1h** a
 
 | Quantity | Part            | 3D view |
 |:--------:|-----------------|:-------:|
-| 1        | [flap_top.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/flap_top.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/flap_top.stl?height=320&width=320"></script> |
-| 1        | [flap_bottom.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/flap_bottom.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/flap_bottom.stl?height=320&width=320"></script> |
-| 1        | [pb_holder.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/pb_holder.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/pb_holder.stl?height=320&width=320"></script> |
+| 1        | [flap_top.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/flap_top.stl) | {% include 3dview.html username="rnanosaur" repo="nanosaur" path_to_file="nanosaur_description/meshes/flap_top.stl" %} |
+| 1        | [flap_bottom.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/flap_bottom.stl) | {% include 3dview.html username="rnanosaur" repo="nanosaur" path_to_file="nanosaur_description/meshes/flap_bottom.stl" %} |
+| 1        | [pb_holder.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/pb_holder.stl) | {% include 3dview.html username="rnanosaur" repo="nanosaur" path_to_file="nanosaur_description/meshes/pb_holder.stl" %} |
 
-I suggest orienting the STL following this picture and setup with:
-* **Supports**: Enable
-* **Support structure**: Tree
-* **Displacement**:
-  * **flap_bottom.stl**: x=20 y=0
-  * **flat_top.stl**: x=-20 y=0
-  * **pb_holder.stl**: x=-55 y=0
+{% include navtab id="nav-flaps-pb-holder" %}
 
-{% include gallery id="flaps_pb_holder" caption="flap and pb_holder slicer" %}
+## Cover
+
+nanosaur offers different covers for each camera or stereo camera choice. Select here which camera you prefer to print.
+
+{% include feature_row id="covers" type="left" %}
+
+{% include feature_row id="covers-line2" %}
+
+**:bulb: Hint** A new cover for **OAK-D lite** will coming soon!
+{: .notice--info}
 
 # Print tracks
 
@@ -162,16 +301,9 @@ The average time will be: **1h** and **30min** for each track
 
 | Quantity | Part            | 3D view |
 |:--------:|-----------------|:-------:|
-| 2        | [track_print.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/track_print.stl) | <script src="https://embed.github.com/view/3d/rnanosaur/nanosaur/master/nanosaur_description/meshes/track_print.stl?height=320&width=320"></script> |
+| 2        | [track_print.stl](https://github.com/rnanosaur/nanosaur/raw/master/nanosaur_description/meshes/track_print.stl) | {% include 3dview.html username="rnanosaur" repo="nanosaur" path_to_file="nanosaur_description/meshes/track_print.stl" %} |
 
-I suggest orienting the STL following this picture and setup with:
-* **Layer height**: 0.2mm
-* **Print speed**: 30mm/s
-* **Infill**: 10%
-* **Supports**: Disable
-* **retraction**: Disable
-
-{% include figure image_path="/assets/docs/3d-print/track_print.png" alt="track_print.stl slicer" caption="track_print.stl slicer" %}
+{% include navtab id="nav-tracks" %}
 
 # LICENSE
 
